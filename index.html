@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>umio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css"
+    />
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <a href="index.html"><img src="images/logo.png" alt="" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+
+          <ul>
+            <li>
+              <a href="">Home</a>
+            </li>
+            <li>
+              <a href="">Shop</a>
+            </li>
+            <li>
+              <a href="">About</a>
+            </li>
+            <li>
+              <a href="">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <div class="text-box">
+        <h1>You Are Good<br />Collection</h1>
+        <a href="" class="hero-btn">Shop Now</a>
+      </div>
+    </section>
+
+    <!-- shop -->
+    <section class="shop">
+      <h1>Shop</h1>
+
+      <div class="row">
+        <div class="shop-col">
+          <img src="images/clothes.png" />
+          <div class="layer">
+            <h3>Clothes</h3>
+          </div>
+        </div>
+        <div class="shop-col">
+          <img src="images/art.png" />
+          <div class="layer">
+            <h3>Art</h3>
+          </div>
+        </div>
+        <div class="shop-col">
+          <img src="images/homeAcc.png" />
+          <div class="layer">
+            <h3>Home Goods<br />& Accessories</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- javascript menu toggle  -->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+
+    <!-- gallery -->
+    <section class="show-product">
+      <div class="product">
+        <div class="teppou">
+          <img src="images/g1.png" onclick="myFunction(this)" />
+          <img src="images/g2.png" onclick="myFunction(this)" />
+          <img src="images/g3.png" onclick="myFunction(this)" />
+          <img src="images/g4.png" onclick="myFunction(this)" />
+          <img src="images/g5.png" onclick="myFunction(this)" />
+        </div>
+        <div class="img-container">
+          <img id="imageBox" src="images/g1.png" />
+        </div>
+      </div>
+
+      <script>
+        function myFunction(smallImg) {
+          var fullImg = document.getElementById("imageBox");
+          fullImg.src = smallImg.src;
+        }
+      </script>
+      <article>
+        <h1>FLOWER FRIENDS</h1>
+        <h3>$25.00</h3>
+        <p>
+          Say hello to our plushie Teppou! Made from cosy velvet with
+          embroidered face details. An ideal friend to join your reading nook or
+          fiercely guard your armchair.
+        </p>
+      </article>
+    </section>
+
+    <section class="subscribe">
+      <div class="subscribe__item">
+        <form>
+          <div class="inputs">
+            <input type="email" placeholder="E-Mail" class="email" />
+            <button class="btn">SUBSCRIBE</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- carroussel -->
+    <div class="ooo">
+      <div class="carr-wrapper">
+        <span id="photo1"></span>
+        <span id="photo2"></span>
+        <span id="photo3"></span>
+        <div class="carr-item photo1">
+          <a href="#photo3" class="arrow-prev arrow"></a>
+          <a href="#photo2" class="arrow-next arrow"></a>
+        </div>
+
+        <div class="carr-item photo2">
+          <a href="#photo1" class="arrow-prev arrow"></a>
+          <a href="#photo3" class="arrow-next arrow"></a>
+        </div>
+
+        <div class="carr-item photo3">
+          <a href="#photo2" class="arrow-prev arrow"></a>
+          <a href="#photo1" class="arrow-next arrow"></a>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <footer class="merge">
+    <div class="hyperlink">
+        <ul class="hyperlink__list">
+            <li class="footer__menu"><a>Search</a></li>
+            <li class="footer__menu"><a>Shipping & Returns</a></li>
+            <li class="footer__menu"><a>Terms & Conditions</a></li>
+            <li class="footer__menu"><a>Privacy Policy</a></li>
+        </ul>
+    </div>
+  </footer>
+</html>
