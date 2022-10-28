@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   font-family: "Karla", sans-serif;
+  box-sizing: border-box;
 }
 
 
@@ -154,11 +155,11 @@ h1 {
 }
 
 p {
-  color: #fff;
+  color: #000;
   font-size: 14px;
   font-weight: 300;
   line-height: 22px;
-  padding: 10px;
+  padding: 0px;
 }
 
 .row {
@@ -249,8 +250,9 @@ p {
 }
 
 .img-container {
-  float: right;
-  padding: 10px;
+  width: 100%;
+  left: 0;
+  top: 0;
 }
 
 .subscribe__item {
@@ -286,7 +288,7 @@ padding: 50px;
     position: relative;
     width: 800px;
     display: block;
-    margin: 50px auto;
+    
 }
 .email {
     margin-bottom: 1%;
@@ -395,13 +397,299 @@ padding: 50px;
   .footer{
     background: #3BBB7B;
     color:#3BBB7B;
-    font-size: 10px;
-    padding: 60px;
+ 
 }
+
+.footer-basic {
+  padding:40px 0;
+  background-color:#ffffff;
+  color:#4b4c4d;
+}
+
+.footer-basic ul {
+  padding:0;
+  list-style:none;
+  text-align:center;
+  font-size:18px;
+  line-height:1.6;
+  margin-bottom:0;
+}
+
+.footer-basic li {
+  padding:0 10px;
+}
+
+.footer-basic ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+.footer-basic ul a:hover {
+  opacity:1;
+}
+
+.footer-basic .social {
+  text-align:center;
+  padding-bottom:25px;
+}
+
+.footer-basic .social > a {
+  font-size:70px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:1px solid #ccc;
+  margin:0 8px;
+  color:inherit;
+  opacity:0.75;
+}
+
+.footer-basic .social > a:hover {
+  opacity:0.9;
+}
+
+.footer-basic .copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:13px;
+  color:#aaa;
+  margin-bottom:0;
+}
+
 
 a{
     font-size: 12px;
 }
+
+.container {
+  width: 100%;
+  
+  padding: 15px;
+  display: flex;
+  background: #f0b2be;
+}
+
+.container2 {
+  max-width: 1200px;
+  margin: 0;
+  padding: 15px;
+  display: flex;
+  background: #59AEC3;
+}
+
+.container3 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px;
+  display: flex;
+  background: #F68F2C;
+}
+
+.container4 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px;
+  display: flex;
+  background: #3BBB7B;
+}
+
+/* Columns */
+.left-column {
+  width: 65%;
+  position: relative;
+}
+ 
+.right-column {
+  width: 35%;
+  margin-top: 60px;
+}
+
+.ohfuck {
+  width: 100%;
+
+}
+
+/* .subscribe {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #e3f2fd;
+} */
+
+.sparemegod {
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+}
+.sparemegod2 {
+  background-color: #EDCE7F;
+  color: white;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.sparemegod3 {
+  background-color: white;
+  color: #FAC1CC;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.pe2 {
+  color: white;
+}
+
+.right {
+  padding: 50px 100px 50px 50px;
+  color: white;
+}
+
+button{
+  font-size: 18px;
+  font-weight: 400;
+  color: #000;
+  padding: 5px 20px;
+  border: none;
+  background: white;
+  cursor: pointer;
+
+} 
+
+button:hover {
+  color: #EF4D2F;
+}
+
+button.show-modal,
+.modal-box {
+  
+  left: 50%;
+  top: 50%;
+  
+}
+
+section.active .show-modal {
+  display: none;
+
+}
+
+.overlay {
+  position:absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  pointer-events: none;
+}
+
+section.active .overlay{
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 380px;
+  width: 100%;
+  padding: 30px 20px;
+  background-color: white;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+section.active .modal-box{
+  opacity: 1;
+  pointer-events: auto;
+
+}
+
+.modal-box i{
+  font-size: 70px;
+  color: #EF4D2F;
+}
+.modal-box h2{
+  margin-top: 20px;
+  font-size: 25px;
+  font-weight: 400;
+  color: #333;
+}
+.modal-box h3{
+  margin-top: 16px;
+  font-size: 25px;
+  font-weight: 200;
+  color: #333;
+  text-align: center;
+
+}
+.modal-box .buttons{
+  margin-top: 25px;
+}
+.modal-box button{
+  font-size: 14px;
+  padding: 6px 12px;
+  margin: 0 10px;
+}
+
+
+.slider {
+  width: 100%;
+  max-width: 800px;
+  height: 350px;
+  position: relative;
+  overflow: hidden; /* <===  */
+  border-radius: 15px;
+}
+
+.slide {
+  width: 100%;
+  max-width: 800px;
+  height: 350px;
+  position: absolute;
+  transition: all 0.5s;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.btn {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border: none;
+  border-radius: 50%;
+  z-index: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  font-size: 18px;
+}
+.btn:active {
+  transform: scale(1.1);
+}
+.btn-prev {
+  top: 45%;
+  left: 2%;
+}
+
+.btn-next {
+  top: 45%;
+  right: 2%;
+}
+
+
 
 /* @media (max-width: 575.98px) {
     .gallery {
