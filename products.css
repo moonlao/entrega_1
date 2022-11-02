@@ -1,0 +1,102 @@
+* {
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Karla", sans-serif;
+	color: black;
+}
+
+
+
+img {
+	width: 15vw;
+	height: 15vw;
+}
+
+header {
+	background-color: black;
+	width: 100%;
+	height: 15vw;
+}
+
+.container{
+	margin: 0 auto;
+	max-width: 90vw;
+	align-content: center;
+	justify-content: center;
+}
+
+header h1{
+	font-size: 3vw;
+	line-height: 2;
+	color: white;
+}
+
+form input {
+	width: 20vw;
+	padding: 1vw;
+	border:none;
+	outline: none;
+	font-size: 1vw;
+	border-bottom: 1px solid #fff;
+	margin-bottom: 2vw;
+}
+
+.btn {
+	text-decoration: none;
+	color: black;
+	font-size: 1vw;
+	background-color: white;
+	padding: 0.5vw;
+	border-radius: 3px;
+	margin-right: 1vw;
+}
+
+.active {
+	background-color: white;
+}
+
+#umio-products {
+	display: grid;
+	align-content: center;
+	grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+	column-gap: 2vw;
+	padding: 2vw 0;
+	row-gap: 2vw;
+	justify-items: center;
+	padding-top: 6vw;
+}
+
+.umio-products {
+	border: 1px solid white;
+	max-width: 20vw;
+	align-content: center;
+	justify-items: center;
+}
+
+
+.umio-product-detail {
+	text-align: center;
+	padding-bottom: 5vw;
+}
+
+.umio-product-detail h2{
+	font-size: 2vw;
+	font-weight: 500;
+	margin-bottom: 1vw;
+	margin-top: 2vw;
+}
+
+.umio-product-detail p{
+	padding-bottom: 2vw;
+	font-size: 2vw;
+	color: red;
+	font-weight: 700;
+}
+
+.umio-product-detail a{
+	font-size: 1.5vw;
+	text-decoration: none;
+	color: white;
+	background-color: black;
+	padding: 1vw 1vw;
+}

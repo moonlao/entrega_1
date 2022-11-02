@@ -1,0 +1,49 @@
+[
+    {
+        "price": 458,
+        "color": "orange",
+        "categories":[
+            "Clothes"
+        ],
+        "size":"small",
+        "id": 61
+    },
+    {
+        "price": 294,
+        "color": "black",
+        "categories":[
+            "Art"
+        ],
+        "size":"small",
+        "id": 62
+    },
+    {
+        "price": 3045,
+        "color": "white",
+        "categories":[
+            "Home"
+            
+        ],
+        "size":"small",
+        "id": 63
+    },
+    {
+        "price": 495,
+        "color": "black",
+        "categories":[
+            "Art"
+        ],
+        "size":"medium",
+        "id": 64
+    },
+    {
+        "price": 10,
+        "color": "white",
+        "categories":[
+            "Home"
+        ],
+        "size":"large",
+        "id": 65
+    }
+
+]

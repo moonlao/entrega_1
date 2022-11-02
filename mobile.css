@@ -1,0 +1,130 @@
+@media all and (max-width: 1200px) {
+
+    .navigation{
+        justify-content: space-between;
+    }
+
+   
+}
+
+@media all and (min-width:1201px){
+    
+}
+
+@media all and (max-width: 768px) {
+
+    .nav img{
+        width: 100px
+    }
+
+    
+}
+
+@media all and (max-width: 560px){
+
+    .text-box {
+        top: 30vw;
+        
+    }
+
+    .text-box h1{
+        font-size: 4vw;
+    }
+
+    /* .hero-btn {
+        padding: 5vw 14vw;
+    }
+    .hero-btn a{
+        font-size: 5vw;
+    } */
+    .shop {
+        padding-top: 5vw;
+        height: 64vw;
+    }
+    .shop h1{
+        font-size: 8vw;
+    }
+      
+    .form {
+        width: 80%;
+        flex-wrap: wrap;
+    }
+
+    .subscribe__item p{
+        font-size: 2vw;
+    }
+    
+    .h2 {
+        font-size: 4vw;
+    }
+    .merge{
+        font-size: 0.5em; 
+        padding: 16px;
+    }
+
+    .container4 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left {
+        padding-left: 0vw;
+        margin-right: 0vw;
+    }
+
+    .right {
+        margin-right: 0vw;
+        margin-left: 0vw;
+    }
+
+    .pe2 p{
+        font-size: 1rem;
+    }
+
+    .merge__logo img {
+        width: 7vw;
+        margin-top: 5vw;
+        margin: 0.5vw;
+    }
+
+    .product-description p {
+        margin-top: 1.5vw;
+        font-size: 0.6rem;
+    }
+    .subscribe__item h2 {
+        color: white;
+        padding-top: 6vw;
+        font-weight: 300;
+        font-size: 2rem;
+    }
+    .subscribe__item p {
+        font-size: 0.8rem;
+    }
+    .container2 {
+        width: 100%;
+        padding: 6vw;
+        display: flex;
+        flex-direction: column;
+        background: #30B1C6;
+        align-items: center;
+    }
+    .stockBtn a {
+        background-color: #EDCE7F;
+        color: white;
+        border-radius: 30px;
+        /* padding: 1vw 1.5vw; */
+        /* margin: 0.5vw; */
+        text-decoration: none;
+        font-size: 0.9rem;
+        margin-top: 2vw;
+        text-align: center;
+    }
+    
+}
+
+@media all and (max-width: 375px){
+
+    
+    
+
+}
