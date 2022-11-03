@@ -119,6 +119,15 @@
         margin-top: 2vw;
         text-align: center;
     }
+
+    .row {
+        margin-top: 4vw;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+    }
     
 }
 
